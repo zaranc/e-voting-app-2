@@ -15,7 +15,7 @@ let getData = (action) => {
 let postData = (action) => {
     console.log(action, "post data api");
     let { endpoint } = action;
-    console.log(action);
+    console.log(action, "post data api susccfulle");
     return axios.post(Base_url + endpoint, action.payload).then((res) => {
         let data = res.data;
         let status = res.status;
